@@ -4,14 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ascent"
+    android:background="@color/val"
     tools:context=".Ascent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="This is Ascent"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="274dp" />
+    <ImageView
+        android:id="@+id/ascent_brimstone"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/brimstone" />
+
+    <ImageView
+        android:id="@+id/ascent_fade"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fade" />
+
+    <ImageView
+        android:id="@+id/ascent_killjoy"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ascent_brimstone"
+        app:srcCompat="@drawable/killjoy" />
+
+    <ImageView
+        android:id="@+id/ascent_sova"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ascent_fade"
+        app:srcCompat="@drawable/sova" />
+
+    <ImageView
+        android:id="@+id/ascent_viper"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ascent_killjoy"
+        app:srcCompat="@drawable/viper" />
+
+    <ImageView
+        android:id="@+id/ascent_yoru"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ascent_sova"
+        app:srcCompat="@drawable/yoru" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
