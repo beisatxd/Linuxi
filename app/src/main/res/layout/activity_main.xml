@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/val"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Haven_button"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_buttons"
+        android:onClick="buttonHandler"
+        android:text="Haven"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Haven_image"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Breeze_button"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:background="@drawable/custom_buttons"
+        android:onClick="buttonHandler"
+        android:text="Breeze"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Breeze_image"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Ascent_button"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:background="@drawable/custom_buttons"
+        android:onClick="buttonHandler"
+        android:text="Ascent"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ascent_image"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Pearl_button"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:background="@drawable/custom_buttons"
+        android:onClick="buttonHandler"
+        android:text="Pearl"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pearl_image"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Lotus_button"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:background="@drawable/custom_buttons"
+        android:onClick="buttonHandler"
+        android:text="Lotus"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lotus_image"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <ImageView
+        android:id="@+id/Ascent_image"
+        android:layout_width="134dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="32dp"
+        android:onClick="iconHandler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ascent"
+        android:background="@drawable/border_image"/>
+
+    <ImageView
+        android:id="@+id/Pearl_image"
+        android:layout_width="134dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_image"
+        android:onClick="iconHandler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Haven_button"
+        app:srcCompat="@drawable/pearl" />
+
+    <ImageView
+        android:id="@+id/Lotus_image"
+        android:layout_width="134dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_image"
+        android:onClick="iconHandler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pearl_button"
+        app:srcCompat="@drawable/lotus" />
+
+    <ImageView
+        android:id="@+id/Haven_image"
+        android:layout_width="134dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_image"
+        android:onClick="iconHandler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Breeze_button"
+        app:srcCompat="@drawable/haven" />
+
+    <ImageView
+        android:id="@+id/Breeze_image"
+        android:layout_width="134dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:onClick="iconHandler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ascent_button"
+        app:srcCompat="@drawable/breeze"
+        android:background="@drawable/border_image"/>
+
+    <ImageView
+        android:id="@+id/Bind_image"
+        android:layout_width="134dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="32dp"
+        android:onClick="iconHandler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bind"
+        android:background="@drawable/border_image"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Split_button"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/custom_buttons"
+        android:onClick="buttonHandler"
+        android:text="Split"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Split_image"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/Split_image"
+        android:layout_width="134dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_image"
+        android:onClick="iconHandler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Icebox_button"
+        app:srcCompat="@drawable/split" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Fracture_button"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:background="@drawable/custom_buttons"
+        android:onClick="buttonHandler"
+        android:text="Fracture"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fracture_image"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <ImageView
+        android:id="@+id/Icebox_image"
+        android:layout_width="134dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:onClick="iconHandler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fracture_button"
+        app:srcCompat="@drawable/icebox"
+        android:background="@drawable/border_image"/>
+
+    <ImageView
+        android:id="@+id/Fracture_image"
+        android:layout_width="134dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_image"
+        android:onClick="iconHandler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bind_button"
+        app:srcCompat="@drawable/fracture" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Bind_button"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:background="@drawable/custom_buttons"
+        android:onClick="buttonHandler"
+        android:text="Bind"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bind_image"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Icebox_button"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:background="@drawable/custom_buttons"
+        android:onClick="buttonHandler"
+        android:text="Icebox"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Icebox_image"
+        app:layout_constraintVertical_bias="0.018" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
