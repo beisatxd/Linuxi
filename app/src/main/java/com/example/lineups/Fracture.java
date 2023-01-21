@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Fracture extends AppCompatActivity {
 
@@ -16,6 +17,42 @@ public class Fracture extends AppCompatActivity {
         setContentView(R.layout.activity_fracture);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
+    public void iconHandler(View v) {
+        switch (v.getId()) {
+            case R.id.fracture_brimstone: {
+                Intent i = new Intent(getApplicationContext(), Fracture_Brimstone.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.fracture_fade: {
+                Intent i = new Intent(getApplicationContext(), Fracture_Fade.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.fracture_killjoy: {
+                Intent i = new Intent(getApplicationContext(), Fracture_Killjoy.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.fracture_sova: {
+                Intent i = new Intent(getApplicationContext(), Fracture_Sova.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.fracture_viper: {
+                Intent i = new Intent(getApplicationContext(), Fracture_Viper.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.fracture_yoru: {
+                Intent i = new Intent(getApplicationContext(), Fracture_Yoru.class);
+                startActivity(i);
+                break;
+            }
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

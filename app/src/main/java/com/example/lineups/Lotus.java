@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Lotus extends AppCompatActivity {
 
@@ -16,6 +17,42 @@ public class Lotus extends AppCompatActivity {
         setContentView(R.layout.activity_lotus);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
+    public void iconHandler(View v) {
+        switch (v.getId()) {
+            case R.id.lotus_brimstone: {
+                Intent i = new Intent(getApplicationContext(), Lotus_Brimstone.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.lotus_fade: {
+                Intent i = new Intent(getApplicationContext(), Lotus_Fade.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.lotus_killjoy: {
+                Intent i = new Intent(getApplicationContext(), Lotus_Killjoy.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.lotus_sova: {
+                Intent i = new Intent(getApplicationContext(), Lotus_Sova.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.lotus_viper: {
+                Intent i = new Intent(getApplicationContext(), Lotus_Viper.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.lotus_yoru: {
+                Intent i = new Intent(getApplicationContext(), Lotus_Yoru.class);
+                startActivity(i);
+                break;
+            }
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Bind extends AppCompatActivity {
 
@@ -16,6 +17,42 @@ public class Bind extends AppCompatActivity {
         setContentView(R.layout.activity_bind);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
+    public void iconHandler(View v) {
+        switch (v.getId()) {
+            case R.id.bind_brimstone: {
+                Intent i = new Intent(getApplicationContext(), Bind_Brimstone.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.bind_fade: {
+                Intent i = new Intent(getApplicationContext(), Bind_Fade.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.bind_killjoy: {
+                Intent i = new Intent(getApplicationContext(), Bind_Killjoy.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.bind_sova: {
+                Intent i = new Intent(getApplicationContext(), Bind_Sova.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.bind_viper: {
+                Intent i = new Intent(getApplicationContext(), Bind_Viper.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.bind_yoru: {
+                Intent i = new Intent(getApplicationContext(), Bind_Yoru.class);
+                startActivity(i);
+                break;
+            }
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

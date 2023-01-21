@@ -11,6 +11,7 @@
         android:id="@+id/fracture_brimstone"
         android:layout_width="190dp"
         android:layout_height="190dp"
+        android:onClick="iconHandler"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/brimstone" />
@@ -19,6 +20,7 @@
         android:id="@+id/fracture_fade"
         android:layout_width="190dp"
         android:layout_height="190dp"
+        android:onClick="iconHandler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fade" />
@@ -28,6 +30,7 @@
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_marginTop="28dp"
+        android:onClick="iconHandler"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fracture_brimstone"
         app:srcCompat="@drawable/killjoy" />
@@ -37,6 +40,7 @@
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_marginTop="28dp"
+        android:onClick="iconHandler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fracture_fade"
         app:srcCompat="@drawable/sova" />
@@ -46,6 +50,7 @@
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_marginTop="28dp"
+        android:onClick="iconHandler"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fracture_killjoy"
         app:srcCompat="@drawable/viper" />
@@ -55,6 +60,7 @@
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_marginTop="28dp"
+        android:onClick="iconHandler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fracture_sova"
         app:srcCompat="@drawable/yoru" />

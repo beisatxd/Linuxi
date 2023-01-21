@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Icebox extends AppCompatActivity {
 
@@ -16,6 +17,42 @@ public class Icebox extends AppCompatActivity {
         setContentView(R.layout.activity_icebox);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
+    public void iconHandler(View v) {
+        switch (v.getId()) {
+            case R.id.icebox_brimstone: {
+                Intent i = new Intent(getApplicationContext(), Icebox_Brimstone.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.icebox_fade: {
+                Intent i = new Intent(getApplicationContext(), Icebox_Fade.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.icebox_killjoy: {
+                Intent i = new Intent(getApplicationContext(), Icebox_Killjoy.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.icebox_sova: {
+                Intent i = new Intent(getApplicationContext(), Icebox_Sova.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.icebox_viper: {
+                Intent i = new Intent(getApplicationContext(), Icebox_Viper.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.icebox_yoru: {
+                Intent i = new Intent(getApplicationContext(), Icebox_Yoru.class);
+                startActivity(i);
+                break;
+            }
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
