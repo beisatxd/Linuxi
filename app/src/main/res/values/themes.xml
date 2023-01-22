@@ -13,4 +13,13 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="roundimageview" parent="">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">8dp</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+        <item name="color">@color/white</item>
+
+    </style>
 </resources>

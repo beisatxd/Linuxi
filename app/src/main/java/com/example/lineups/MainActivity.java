@@ -67,55 +67,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void buttonHandler(View v) {
-        switch (v.getId()) {
-            case R.id.Ascent_button: {
-                Intent i = new Intent(getApplicationContext(), Ascent.class);
-                startActivity(i);
-                break;
-            }
-            case R.id.Bind_button: {
-                Intent i = new Intent(getApplicationContext(), Bind.class);
-                startActivity(i);
-                break;
-            }
-            case R.id.Breeze_button: {
-                Intent i = new Intent(getApplicationContext(), Breeze.class);
-                startActivity(i);
-                break;
-            }
-            case R.id.Fracture_button: {
-                Intent i = new Intent(getApplicationContext(), Fracture.class);
-                startActivity(i);
-                break;
-            }
-            case R.id.Haven_button: {
-                Intent i = new Intent(getApplicationContext(), Haven.class);
-                startActivity(i);
-                break;
-            }
-            case R.id.Icebox_button: {
-                Intent i = new Intent(getApplicationContext(), Icebox.class);
-                startActivity(i);
-                break;
-            }
-            case R.id.Pearl_button: {
-                Intent i = new Intent(getApplicationContext(), Pearl.class);
-                startActivity(i);
-                break;
-            }
-            case R.id.Split_button: {
-                Intent i = new Intent(getApplicationContext(), Split.class);
-                startActivity(i);
-                break;
-            }
-            case R.id.Lotus_button: {
-                Intent i = new Intent(getApplicationContext(), Lotus.class);
-                startActivity(i);
-                break;
-            }
-        }
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
